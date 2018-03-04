@@ -1,0 +1,152 @@
+@import "./variable";
+
+.side-bar__name{
+  color: $white;
+  font-size:  16px;
+  font-weight: bold;
+  padding: 40px 20px;
+}
+
+.side-bar__group{
+  color: $white;
+  font-size: 15px;
+  padding-bottom:40px;
+}
+
+.side-bar__message{
+  color:  $white;
+  font-size: 11px;
+}
+
+
+.side-bar{
+  float:left;
+  width:300px;
+  position: absolute;
+}
+
+.side-bar__name__back{
+  background-color:  $navy;
+  height: 100px;
+}
+
+.side-bar__back{
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  background-color:  $light-navy;
+  height: 100vw;
+}
+
+.a{
+  color: $light-black;
+  font-size: 16px;
+}
+
+.name{
+  color: $light-black;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top:20px;
+  padding-bottom: 10px;
+}
+
+.message{
+  color: $light-black;
+  font-size: 14px;
+  padding-bottom: 20px ;
+}
+
+.group{
+  color: $black;
+  font-size: 20px;
+  padding-top:35px;
+  padding-bottom: 15px;
+}
+
+.date{
+  color: $gray;
+  font-size: 12px;
+}
+.b{
+  color: $gray;
+  font-size: 12px;
+}
+
+.header__back{
+  background-color:  $light-blue;
+  width:100vw;
+  height:25px;
+  text-align: center;
+  color: $white;
+  font-size:15px;
+}
+
+.body__back{
+  float:left;
+  width:100vw;
+  position: absolute;
+}
+
+.body__bottom__back{
+  background-color: $ivory;
+  height:100vw;
+  margin-left: 300px;
+  margin-bottom: -26px;
+  padding-top:20px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.body__upper__back{
+  background-color: $white;
+  height:100px;
+  border-bottom: $ivory ;
+  margin-left: 300px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+
+.button__edit{
+  color:$light-blue;
+  border:2px solid $light-blue;
+  padding:8px 20px;
+  float:right;
+  font-size: 16px;
+  margin-top:-7px;
+}
+.button__send{
+  background-color: $light-blue;
+  color:$white;
+  padding:8px 18px;
+  bottom:0px;
+  position: absolute;
+  right:0;
+  margin:0px 40px 10px 0px;
+}
+.all{
+  max-height:100%;
+}
+.space__text{
+  background-color: $white;
+  height: 37px;
+  padding-right: 50px;
+  margin-left: 30px;
+  margin-top: 20px;
+  width: 60%;
+}
+.space__text__back{
+  bottom:0;
+  margin-bottom: -26px;
+  margin-left:-40px;
+  position: absolute;
+  background-color: $gray;
+  height:70px;
+  width: 65%;
+}
+
+.photo{
+  float:right;
+  margin-top: 5px;
+}
