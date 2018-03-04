@@ -5,8 +5,10 @@
     .side-bar__name__back
       .side-bar__name
         asdfasdf
-        %i{class: "fa fa-pencil-square-o"}
-        %i{class: "fa fa-gear"}
+        = link_to messages_path do
+          %i.fa.fa-pencil-square-o
+        = link_to messages_path do
+          %i.fa.fa-gear
     .side-bar__back
       .side-bar__group
         asdf
@@ -20,8 +22,7 @@
     .body__upper__back
       %p.group
         GROUP
-        %span.button__edit
-          Edit
+        %input{class: "button__edit", type: "submit", value: "Edit"}
       %p.b
         ss
     .body__bottom__back
@@ -36,6 +37,7 @@
         %p.message aa
       .space__text__back
         .space__text
-          %i{class: "fa fa-photo photo"}
-        .button__send
-          Send
+          %label.photo
+            =fa_icon "image"
+            %input{class: "hidden", type: "file"}
+        %input{class: "button__send", type: "submit", value: "Send"}

@@ -1,42 +1,41 @@
 @import "./variable";
 
-.side-bar__name{
-  color: $white;
-  font-size:  16px;
-  font-weight: bold;
-  padding: 40px 20px;
-}
-
-.side-bar__group{
-  color: $white;
-  font-size: 15px;
-  padding-bottom:40px;
-}
-
-.side-bar__message{
-  color:  $white;
-  font-size: 11px;
-}
-
-
 .side-bar{
   float:left;
   width:300px;
   position: absolute;
+
+  &__name{
+    color: $white;
+    font-size:  16px;
+    font-weight: bold;
+    padding: 40px 20px;
+    &__back{
+      background-color:  $navy;
+      height: 100px;
+    }
+  }
+
+  &__group{
+    color: $white;
+    font-size: 15px;
+    padding-bottom:40px;
+  }
+
+  &__message{
+    color:  $white;
+    font-size: 11px;
+  }
+
+  &__back{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color:  $light-navy;
+    height: 100vw;
+  }
 }
 
-.side-bar__name__back{
-  background-color:  $navy;
-  height: 100px;
-}
-
-.side-bar__back{
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-top: 20px;
-  background-color:  $light-navy;
-  height: 100vw;
-}
 
 .a{
   color: $light-black;
@@ -126,7 +125,6 @@
   margin:0px 40px 10px 0px;
 }
 .all{
-  max-height:100%;
 }
 .space__text{
   background-color: $white;
@@ -136,11 +134,12 @@
   margin-top: 20px;
   width: 60%;
 }
+
 .space__text__back{
   bottom:0;
-  margin-bottom: -26px;
+  margin-bottom: 0px;
   margin-left:-40px;
-  position: absolute;
+  position: fixed;
   background-color: $gray;
   height:70px;
   width: 65%;
@@ -149,4 +148,7 @@
 .photo{
   float:right;
   margin-top: 5px;
+}
+.hidden{
+  display: none;
 }
